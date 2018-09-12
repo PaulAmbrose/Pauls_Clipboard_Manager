@@ -10,7 +10,7 @@ import shelve, pyperclip, sys
 mcbShelf = shelve.open('mcb')
 
 if len(sys.argv) == 2 and sys.argv[1].lower() =='instructions':
-    print ("py.exe mcb.pyw save <keyword> - Saves clipboard to keyword.\n" + "py.exe mcb.pyw <keyword> - Loads keyword to clipboard.\n" + "py.exe mcb.pyw list - Loads all keywords to clipboard.")
+    print ("python3 /home/pi/pi2_admin_tools/mcb.pyw instructions save <keyword> - Saves clipboard to keyword.\n" + "python3 /home/pi/pi2_admin_tools/mcb.pyw instructions <keyword> - Loads keyword to clipboard.\n" + "python3 /home/pi/pi2_admin_tools/mcb.pyw instructions list - Loads all keywords to clipboard.")
 
 # Save clipboard content.
 if len(sys.argv) == 3 and sys.argv[1].lower() == 'save':
